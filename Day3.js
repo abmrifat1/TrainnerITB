@@ -1,15 +1,15 @@
-// function whileLoop() {
-//   var check = true;
-//   var i = 0;
-//   while (check) {
-//     if (i === 10) {
-//       check = false;
-//     }
-//     console.log(i);
-//     i++;
-//   }
-// }
-// //whileLoop();
+function whileLoop() {
+  var check = true;
+  var i = 0;
+  while (check) {
+    if (i === 10) {
+      check = false;
+    }
+    console.log(i);
+    i++;
+  }
+}
+// whileLoop();
 // groceries=[{item:"veg",itemPrice:20}]
 
 // "Todays shopping : veg-20,pencil-30"
@@ -34,37 +34,39 @@
 // }
 // //forLoop();
 
-// function forEachLoop(){
-//   var data=[null,2,undefined,3];
-//   data.forEach(number => {
-//     if(number%2==0){
-//       console.log(number);
-//     }
-//   });
-// }
+function forEachLoop(){
+  var data=[null,2,0,undefined,3];
+  data.forEach(number => {
+    if(number%2==0){
+      console.log(number);
+    }
+  });
+}
 
-// //forEachLoop()
+// forEachLoop()
 
-// function ternaryStatement(a,b){
-//   var large=a>b?a:b;
-// }
+function ternaryStatement(a,b){
+  return large=a>b?a:b;
+}
+// console.log(ternaryStatement(5,6))
 
-// function getData(number){
-//   data=0;
-//   const record={
-//     name:"sample"
-//   }
-//   record={
-//     name:"test"
-//   }
+
+function getData(number){
+ const data=0;
+  const record={
+    name:"sample"
+  }
+  // record={
+  //   name:"test"
+  // }
   
-//   // if(number===1){
-//   //   let data=22;
-//   // }
-//   // return data;
-//   return record;
-// }
-// //console.log(getData());
+  if(number===1){
+    return data=22;
+  }
+ return data;
+  // return record;
+}
+//console.log(getData(1));
 
 // getInfo=()=>{
 //   return "info not found";
@@ -92,10 +94,35 @@ module.exports ={
 //   hsc:{}
 // }
 
-// const updateEducation=(currentInfo,newData)=>{
-//   currentInfo={
-//     ...previous,
-//     newData,
-//   }
-// }
+var previous=[7,9]
+var newData=["hi","ki"]
+var arr=['ssc']
+
+const updateEducation=(newData,previous)=>{
+  currentInfo={
+    ...previous,
+    // ...newData,
+  }
+  return currentInfo;
+}
+//console.log(updateEducation(newData,previous))
+
+let student=[["Luke May", 43, "male", "married"],
+["Sarah Saw", 54, "female", "single"],
+["Magac gose", 51, "male", "single"]
+]
+var keys = ["name", "age", "gender", "status"];
+let objArr=[]
+student.forEach(r=>{
+  let obj={};
+
+  r.forEach((r,i)=>{
+     obj[keys[i]]=r
+  })
+  //console.log(obj)
+  objArr.push(obj)
+
+})
+console.log(objArr)
+
 
