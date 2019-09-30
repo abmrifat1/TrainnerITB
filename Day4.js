@@ -1,7 +1,7 @@
 let functionFromOther=require("./Day3");
 
 const record={
-    price:55
+    price:5
 }
 const personalInfo={
     name:"sample",
@@ -22,25 +22,25 @@ data={
 }
 
 
-record['name']="testy"
-personalInfo.age=34;
-console.log(record);
+// record['name']="testy"
+// personalInfo.age=34;
+// console.log(record);
 const info={...personalInfo,...record};
-console.log(info);
+// console.log(info);
 
 const collection=[1,2,3,3,4,4];
 const number=[...collection,...collection];
-console.log(number);
+// console.log(number);
 
 
 const taskName="test";
 const statement=`Currently i am doing ${taskName}`;
 console.log(statement);
 functionFromOther.returnOddNumber
-console.log(functionFromOther.returnOddNumber(23));
+console.log(functionFromOther.returnOddNumber(22));
 
  isFound=()=>{
-const data=[1,2,3,3];
+const data=[1,2,7];
 let isFound=false;
 data.forEach(eachData=>{
     if(eachData===3){
@@ -50,4 +50,4 @@ data.forEach(eachData=>{
 })
 return isFound
  }
- console.log(isFound());
+ //console.log(isFound());
